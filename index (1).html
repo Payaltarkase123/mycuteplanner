@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Welcome — MyCutePlanner 💕</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffb6c1">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="home">
+<div class="home-container">
+<h1 class="app-name">MyCutePlanner 💕</h1>
+<p class="tagline">Organize your day — the cute way ✨</p>
+<a href="todo.html" class="start-btn">Add Tasks 🩷</a>
+</div>
+
+
+<script>
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('service-worker.js')
+.then(() => console.log('Service Worker registered! 🌸'))
+.catch(err => console.warn('SW failed:', err));
+}
+</script>
+</body>
+</html>

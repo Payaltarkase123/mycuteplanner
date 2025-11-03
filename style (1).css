@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+
+
+/* backgrounds */
+body.home {
+background: linear-gradient(135deg, #ffd6e8, #fff0f5, #ffe6f0);
+min-height: 100vh; display:flex; align-items:center; justify-content:center;
+}
+body.todo {
+background: linear-gradient(135deg, #ffe6f0, #ffd6e8, #fff0f5);
+min-height: 100vh; display:flex; align-items:center; justify-content:center;
+}
+
+
+.home-container {
+background: rgba(255,255,255,0.9);
+padding: 50px; border-radius: 30px; text-align:center;
+box-shadow: 0 8px 30px rgba(255, 182, 193, 0.35); border: 2px solid #ffc2d1;
+}
+
+
+.app-name { font-size: 2.3rem; color:#ff6f9a; text-shadow:0 0 8px #fff; }
+.tagline { color: #ff5f91; margin:10px 0 20px; font-weight:500 }
+.start-btn { background:#ff9ebb; color:white; padding:12px 28px; border-radius:20px; text-decoration:none; font-weight:600; box-shadow:0 6px 18px rgba(255,160,190,0.35); }
+.start-btn:hover { transform:scale(1.03); background:#ff85a2 }
+
+
+.container {
+width: 360px; background: rgba(255,255,255,0.92); padding:28px; border-radius:22px; box-shadow:0 8px 30px rgba(255, 182, 193, 0.35); border:2px solid #ffc2d1; text-align:center;
+}
+
+
+h1 { color:#ff6f9a; margin-bottom:12px; }
+.input-section { display:flex; flex-direction:column; gap:10px; margin-bottom:16px }
+input, button { padding:12px; border-radius:12px; border:none; outline:none; font-size:15px }
+#taskInput, #reminderTime { background:#ffe4ec; color:#ff4d79 }
+#addBtn { background:#ff9ebb; color:white; font-weight:600; box-shadow:0 4px 12px rgba(255,160,190,0.25) }
+#addBtn:hover { transform:scale(1.02); background:#ff85a2 }
+
+
+ul { list-style:none; max-height:260px; overflow:auto; padding-right:6px; margin-top:8px }
+li { background:#fff0f6; padding:12px; border-radius:12px; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 4px 12px rgba(255,182,193,0.2); color:#ff527e }
+li.done { text-decoration:line-through; opacity:0.65 }
+.task-btns { display:flex; gap:6px }
+.edit-btn, .delete-btn { border:none; padding:6px 8px; border-radius:8px; color:white; cursor:pointer }
+.edit-btn { background:#ffb6c1 }
+.delete-btn { background:#ffadc6 }
+.edit-btn:hover { background:#ff91a4 }
+.delete-btn:hover { background:#ff90b3 }
+.back-btn { display:inline-block; margin-top:10px; color:#ff6f9a; text-decoration:none; font-weight:600 }
+
+
+/* small responsive tweak */
+@media (max-width:420px) {
+.container, .home-container { width:92%; padding:20px }
+}
